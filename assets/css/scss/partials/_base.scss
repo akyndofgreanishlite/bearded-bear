@@ -1,0 +1,169 @@
+body {
+	font-size: 100%;
+	line-height: 1.4em;
+	font-family: $serif;
+	color: $text-color;
+	margin: 0 auto;
+	// text-shadow: 0 1px 0 white;
+	text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $sans;
+	font-weight: 500;
+	color: $text-color;
+	text-rendering: optimizeLegibility;
+}
+
+h1 {
+	font-size: 3.75em; // 60px
+	// font-size: 3em; // 48px
+	// font-size: 2.25rem;
+	line-height: 1.2em;
+}
+
+h2 {
+	font-size: 2.25em; // 36px
+	// font-size: 1.75rem;
+	// line-height: 1.2em;
+	line-height: 1.15em;
+}
+
+h3 {
+	font-size: 1.75em; // 28 px
+	// font-size: 1.5rem; // 24px
+	line-height: 1.2em;
+}
+
+h4 {
+	font-size: 1.5em; // 24px
+	// font-size: 1.313rem; // 21px
+}
+
+h5 {
+	font-size: 1.313em; // 21px
+	// font-size: 1.125rem; // 18px
+}
+
+h6 {
+	font-size: 1.125em; // 18px
+	// font-size: 1rem; // 16px
+}
+
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p {
+	margin-top: 0;
+}
+
+p {
+	margin: 0 inherit;
+	// padding-top: 0.5em;
+	// text-indent: 2em;
+	text-indent: 0;
+
+	&:first-child {
+		// text-indent: 0;
+		// padding-top: 1em;
+	}
+
+	&:first-of-type {
+		// text-indent: 0;
+	}
+
+	&:last-of-type{
+		// padding-bottom: 0.5em;
+		padding-bottom: 1em;
+	}
+
+	&.center {
+		text-align: left;
+	}
+}
+
+a {
+	text-decoration: none;
+	
+	&:link,
+	&:active,
+	&:visited {
+		color: $link-color;
+	}
+
+	&:hover{
+		// color: darken($linkColor, 20%);
+		color: darken($text-color, 20%);
+		// text-decoration: underline;
+	}
+
+	img {
+		border: none;
+		background: transparent !important;
+	}
+}
+
+figure {
+	margin-left: 0;
+	margin-right: 0;
+
+	figcaption {
+		ul {
+			padding-left: 0;
+
+			p {
+
+			}
+		}
+	}
+}
+
+img {
+	width: 100%;
+}
+
+ul, ol {
+
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+li {
+
+}
+
+nav {
+	li {
+		list-style-type: none;
+		display: inline;
+		// margin-left: 0.75em;
+		margin-left: 0.5em;
+		margin-right: 0.5em;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
+footer {
+	padding: 1em 0;
+}
+
+button,
+form,
+input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+}

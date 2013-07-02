@@ -1,0 +1,86 @@
+//  Base
+$blockColor: #333333;
+$blockBackground: #eee;
+$center-width: 70%;
+$gutter: 4%;
+
+//  Demo
+$DemoPass: #dff0d8;
+$DemoFail: #f0d8d8;
+
+//  Media Query
+//  Width
+$width-xlg: 103.125em; // 1650px
+$width-lg: 75.000em;	// 1200px
+$width-med: 64.375em; // 1030px
+$width-sm: 37.500em; // 600px
+$width-xsm: 25.000em; // 400px
+
+// Heights
+$height-sm: 31.250em; // 500px
+$height-med: 43.750em; // 700px
+$height-lg: 50.000em; // 800px
+
+//  Colors
+$spice: #405B86;
+$red: #c92425;
+$cream: #f1e3c6;
+$black: #000;
+$white: #fff;
+$bluepurple: #3FA9F5;
+
+$text-color: #333333;
+$link-color: $bluepurple;
+$link-color-hover: darken($link-color, 25%);
+$link-sub-color: #666;
+$link-sub-color-hover: darken($link-sub-color, 40%);
+$background-color: #f5f5f2;
+
+
+
+// Old guys
+// $textColor: #222222;
+// $linkColor: #30466f;
+// $linkColor: #8E9958;
+// $linkColor: #DC7F4A;
+// $linkColorHover: darken($linkColor, 20%);
+
+
+
+// Project Specific Colors
+
+$inkling-1: #1C78B5;
+$inkling-2: #57BAF3;
+
+$localytics-1: #333333; // Dark Gray
+$localytics-2: #4d4a4a; // Dark Graybrown
+$localytics-3: #f2f0ea; // Cream
+$localytics-4: #4482c0; // Blue
+$localytics-5: #e6543a; // Orange
+
+$kabam-1: #423630;
+$kabam-2: #FFBD36;
+
+$mood-1: #3E3934; // #2F3034
+$mood-2: #E01E30;
+$mood-3: #98D152; // #41ACED
+
+$hablamos-juntos-1: #010101;
+$hablamos-juntos-2: #424242;
+
+$cincinnati-zoo-1: #5F4F53;
+$cincinnati-zoo-2: #FABC00;
+$cincinnati-zoo-3: #DBDEC3;
+$cincinnati-zoo-4: #F28648;
+$cincinnati-zoo-5: #5A6B8C;
+
+$rwanda-1: #231F20;
+$rwanda-2: #F8C217;
+
+$daap-experience-1: #BD375F;
+$daap-experience-2: #5DBF74;
+
+// Type
+$sans: "Freight Sans Pro", "freight-sans-pro", Verdana, sans-serif;
+$serif: "elena-web-basic", "Elena Basic", Georgia, serif;
+$serif2: "jubilat", "Sentinel", Georgia, serif;
