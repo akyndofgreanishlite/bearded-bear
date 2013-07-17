@@ -28,9 +28,11 @@ $cream: #f1e3c6;
 $black: #000;
 $white: #fff;
 $bluepurple: #3FA9F5;
+$maroon: #590A00;
+$rusty: #C82818;
 
 $text-color: #333333;
-$link-color: $bluepurple;
+$link-color: $rusty;
 $link-color-hover: darken($link-color, 25%);
 $link-sub-color: #666;
 $link-sub-color-hover: darken($link-sub-color, 40%);
@@ -53,7 +55,7 @@ $inkling-1: #1C78B5;
 $inkling-2: #57BAF3;
 
 $localytics-1: #333333; // Dark Gray
-$localytics-2: #4d4a4a; // Dark Graybrown
+$localytics-2: #4d4a49; // Dark Graybrown #4d4a4a
 $localytics-3: #f2f0ea; // Cream
 $localytics-4: #4482c0; // Blue
 $localytics-5: #e6543a; // Orange

@@ -130,7 +130,7 @@ $prefix-for-spec:      true !default; // required for keyframe mixin
 	}
 	
 	&:nth-of-type(#{$colCount}n + 1) {
-		clear: left;
+		clear: left; // Should this be right?
 	}
 }
 

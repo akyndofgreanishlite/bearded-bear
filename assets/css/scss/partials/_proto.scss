@@ -153,8 +153,8 @@
 	.seventyfive + .twentyfive,
 	.eighty + .twenty,
 	.ninety + .ten {
-		margin-right: 0;
 		margin-left: 0;
+		margin-right: 0;
 	}
 
 	// Targets the last in a row.
@@ -162,14 +162,15 @@
 	.thirtythree:nth-of-type(3n+1),
 	.twentyfive:nth-of-type(4n+1),
 	.twenty:nth-child(5n+1) {
-		clear: left;
+		// clear: left;
+		clear: right;
 	}
 	
 	// Is it worth adding common combinations out to a certain degree of
 	// permutations, or can this be achieved through Sass loops?
 	.ten + .ten + .eighty {
-		margin-right: 0;
 		margin-left: 0;
+		margin-right: 0;
 	}
 
 	.ninety,
