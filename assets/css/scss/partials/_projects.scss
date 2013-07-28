@@ -88,7 +88,7 @@
 
 	.hero {
 		margin-top: .7em;
-		margin-bottom: 2em;
+		margin-bottom: 3em;
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -96,11 +96,15 @@
 		* {
 			text-shadow: none;
 		}
+
+		p {
+			font-size: 1.25em;
+		}
 	}
 
 	.lead {
-		font-size: 1.25em;
-		line-height: 1.45em;
+		font-size: 1.15em;
+		line-height: 1.4em;
 		font-family: $serif;
 	}
 

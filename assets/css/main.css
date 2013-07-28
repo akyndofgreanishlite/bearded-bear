@@ -1763,10 +1763,12 @@ body.home {
     margin-bottom: .5em !important; }
   .project-detail figure.full-bleed {
     margin-left: -7.5%;
-    margin-right: -7.5%; } }
+    margin-right: -7.5%; }
+  .project-detail .lead {
+    width: 100%; } }
 @media (max-width: 37.5em) {
   body {
-    font-size: 112.5%; }
+    font-size: 118%; }
 
   section,
   aside {
@@ -1838,7 +1840,9 @@ body.home {
 
   .project-detail figure.full-bleed {
     margin-left: -5%;
-    margin-right: -5%; } }
+    margin-right: -5%; }
+  .project-detail .lead {
+    width: 70%; } }
 @media (min-width: 75em) {
   body {
     font-size: 150%; }
@@ -1929,15 +1933,17 @@ body.home {
       margin-top: 0; }
   .project-detail .hero {
     margin-top: .7em;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; }
     .project-detail .hero * {
       text-shadow: none; }
+    .project-detail .hero p {
+      font-size: 1.25em; }
   .project-detail .lead {
-    font-size: 1.25em;
-    line-height: 1.45em;
+    font-size: 1.15em;
+    line-height: 1.4em;
     font-family: "elena-web-basic", "Elena Basic", Georgia, serif; }
   .project-detail .nav-global li {
     display: inline-block; }

@@ -197,13 +197,17 @@ body.home {
 			margin-left: -7.5%;
 			margin-right: -7.5%;
 		}
+
+		.lead {
+			width: 100%;
+		}
 	}
 }
 
 // Width Small  37.500em
 @media (max-width: $width-sm) {
 	body {
-		font-size: 112.5%;
+		font-size: 118%;
 	}
 
 	section,
@@ -294,9 +298,15 @@ body.home {
 		width: 60%;
 	}
 
-	.project-detail figure.full-bleed {
-		margin-left: -5%;
-		margin-right: -5%;
+	.project-detail {
+		figure.full-bleed {
+			margin-left: -5%;
+			margin-right: -5%;
+		}
+
+		.lead {
+			width: 70%;
+		}
 	}
 
 	// .nav-global {
