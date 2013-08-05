@@ -88,10 +88,11 @@
 
 	.hero {
 		margin-top: .7em;
-		margin-bottom: 3em;
+		// margin-bottom: 3em;
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
+		overflow: auto;
 
 		* {
 			text-shadow: none;
@@ -103,9 +104,19 @@
 	}
 
 	.lead {
-		font-size: 1.15em;
-		line-height: 1.4em;
-		font-family: $serif;
+		font-family: $sans;
+		font-size: 1.5em;
+		line-height: 1.3em;
+		margin-bottom: 0;
+		font-weight: 300;
+		// font-size: 1.15em;
+		// line-height: 1.4em;
+		// font-family: $serif;
+	}
+
+	.opening {
+		overflow: auto;
+		padding: 3em 0 1.5em;
 	}
 
 	// nav ul {
@@ -176,9 +187,25 @@
 				white-space: nowrap;
 	
 				&:hover {
-					border-bottom: none;
+					// border-bottom: none;
 				}		
 			}
+		}
+	}
+
+	dl {
+		text-align: center;
+
+		dt {
+			font-family: $sans;
+			font-size: .8em;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: .085rem;
+		}
+
+		dd {
+			margin-bottom: 1em;
 		}
 	}
 
@@ -238,10 +265,19 @@
 	
 	.hero {
 		background-image: url(../img/localytics-hero.jpg);
-		background-color: $localytics-2;
+		background-color: $localytics-5;
 
 		p {
 			color: $localytics-4;
+		}
+	}
+
+	.opening {
+		color: $white;
+		background-color: $localytics-5;
+
+		.lead {
+			color: $white;
 		}
 	}
 }

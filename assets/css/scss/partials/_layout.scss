@@ -199,6 +199,11 @@ body.home {
 		}
 
 		.lead {
+			// width: 100%;
+			font-size: 1em;
+		}
+
+		.opening {
 			width: 100%;
 		}
 	}
@@ -211,7 +216,8 @@ body.home {
 	}
 
 	section,
-	aside {
+	aside,
+	.opening .lead {
 		width: 88% !important;
 
 		&.hero,
@@ -249,9 +255,19 @@ body.home {
 		font-size: 1.75em; // 28 px
 	}
 
-	.project-detail figure {
-		margin-left: -5%;
-		margin-right: -5%;
+	.project-detail {
+		figure {
+			margin-left: -5%;
+			margin-right: -5%;
+		}
+
+		section.opening {
+			width: 100%;
+		}
+
+		.opening.lead {
+			font-size: 1em;
+		}
 	}
 
 	// h3 {
@@ -267,13 +283,20 @@ body.home {
 	}
 
 	section,
-	aside {
+	aside,
+	.opening .lead {
 		width: 95%;
 	}
 
-	.project-detail figure.full-bleed {
-		margin-left: -2.5%;
-		margin-right: -2.5%;
+	.project-detail {
+		figure.full-bleed {
+			margin-left: -2.5%;
+			margin-right: -2.5%;
+		}
+
+		section.opening {
+			width: 100%;
+		}
 	}
 }
 
@@ -285,7 +308,7 @@ body.home {
 
 	section,
 	aside,
-	.lead {
+	.opening .lead {
 		width: 90%;
 	}
 
@@ -305,7 +328,11 @@ body.home {
 		}
 
 		.lead {
-			width: 70%;
+			width: 80%;
+		}
+
+		section.opening {
+			width: 100%;
 		}
 	}
 
@@ -321,7 +348,8 @@ body.home {
 	}
 
 	section,
-	aside {
+	aside,
+	.opening .lead {
 		// width: 70%;
 		width: 78%;
 	}
@@ -339,9 +367,14 @@ body.home {
 	}
 
 	section,
-	aside {
+	aside,
+	 {
 		width: 62%;
 		// width: 64%;
+	}
+
+	.opening .lead {
+		width: 56%;
 	}
 
 	.project-detail figure {
