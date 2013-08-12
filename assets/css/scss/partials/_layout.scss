@@ -25,7 +25,7 @@ body {
 		padding-left: 2%;
 	}
 
-	li {
+	p + li {
 		margin-top: .5em;
 
 		&:first-child {
@@ -57,7 +57,7 @@ body {
 
 section,
 aside,
-.home .lead {
+.lead {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 80em; // 1280px;
@@ -122,6 +122,7 @@ body.home {
 
 	.lead {
 		color: #fefefc;
+		width: 100%;
 	}
 }
 
@@ -144,14 +145,14 @@ body.home {
 		ul {
 			// width: 95%;
 			width: 85%;
-			max-width: 30em;
+			max-width: 28em;
 		}
 
 		ol {
 			// width: 90%;
 			width: 80%;
 			padding-left: 5%;
-			max-width: 30em;
+			max-width: 28em;
 		}
 	}
 
@@ -216,9 +217,8 @@ body.home {
 	}
 
 	section,
-	aside,
-	.opening .lead {
-		width: 88% !important;
+	aside {
+		width: 88%;
 
 		&.hero,
 		h2,
@@ -228,7 +228,7 @@ body.home {
 		h6,
 		& > p,
 		ul {
-			width: 100% !important;
+			width: 100%;
 		}
 
 		ol {
@@ -237,7 +237,7 @@ body.home {
 		}
 	}
 
-	nav:first-of-type {
+	header nav {
 		li:first-child {
 			clear: both;
 			display: block;
@@ -255,6 +255,12 @@ body.home {
 		font-size: 1.75em; // 28 px
 	}
 
+	.project-list {
+		section {
+			float: none; // Why is this happening?
+		}
+	}
+
 	.project-detail {
 		figure {
 			margin-left: -5%;
@@ -263,6 +269,10 @@ body.home {
 
 		section.opening {
 			width: 100%;
+
+			.lead {
+				width: 88%;
+			}
 		}
 
 		.opening.lead {
@@ -283,9 +293,12 @@ body.home {
 	}
 
 	section,
-	aside,
-	.opening .lead {
-		width: 95%;
+	aside {
+		width: 92% !important;
+	}
+
+	.project-list h2 {
+		font-size: 3.25em !important; // Move media queries into the individual page partials to fix this.
 	}
 
 	.project-detail {
@@ -295,7 +308,11 @@ body.home {
 		}
 
 		section.opening {
-			width: 100%;
+			width: 100% !important;
+
+			.lead {
+				width: 92% !important;
+			}
 		}
 	}
 }

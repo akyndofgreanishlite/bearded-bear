@@ -120,17 +120,25 @@ $prefix-for-spec:      true !default; // required for keyframe mixin
 // These mixins support the in-progress dynamic grid. How these collapse automatically as column narrows still needs to be added/defined.
 
 @mixin width($colCount: 2, $colSpan: 1, $gutter: 4%) {
-	width: $colSpan * ((100% - ($gutter * $colCount)) / $colCount);
-	margin-left: 0;
-	margin-right: $gutter;
-	
-	&:nth-of-type(#{$colCount}n + #{$colCount}) {
-		margin-right: 0;
-		// background-color: teal !important;
-	}
-	
-	&:nth-of-type(#{$colCount}n + 1) {
-		clear: left; // Should this be right?
+	@if $gutter == 'auto' {
+		width: $colSpan * (100% / $colCount);
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+	} @else {
+		width: $colSpan * ((100% - ($gutter * ($colCount - 1))) / $colCount);
+		margin-left: 0;
+		margin-right: $gutter;
+		float: left;
+
+		&:nth-of-type(#{$colCount}n + #{$colCount}) {
+			margin-right: 0;
+			// background-color: teal !important;
+		}
+
+		&:nth-of-type(#{$colCount}n + 1) {
+			clear: left; // Should this be right?
+		}
 	}
 }
 
@@ -150,16 +158,17 @@ $prefix-for-spec:      true !default; // required for keyframe mixin
 
 @mixin grid-columns($colCount: 2, $colSpan: 1, $gutter: 4%) { 
 	@include width($colCount, $colSpan, $gutter);
+	@content;
 
-	&.first {
-		@include first($colCount, $colSpan, $gutter);
-	}
+	// &.first {
+	// 	@include first($colCount, $colSpan, $gutter);
+	// }
 
-	&.only {
-		@include only($colCount, $colSpan, $gutter);
-	}
+	// &.only {
+	// 	@include only($colCount, $colSpan, $gutter);
+	// }
 
-	&.first-only {
-		@include first-only($colCount, $colSpan, $gutter);
-	}
+	// &.first-only {
+	// 	@include first-only($colCount, $colSpan, $gutter);
+	// }
 }

@@ -138,13 +138,20 @@ figure {
 	margin-right: 0;
 
 	figcaption {
+		// margin-top: .5em;
+		clear: both;
+
 		ul {
-			padding-left: 0;
-
-			p {
-
-			}
+			padding-left: 0;	
 		}
+
+		p {
+			line-height: 1.4em;
+		}
+	}
+
+	& + p {
+		margin-top: 1em;
 	}
 }
 
@@ -181,6 +188,10 @@ nav {
 		// 	margin-right: 0;
 		// }
 	}
+}
+
+section {
+	// overflow: auto;
 }
 
 footer {

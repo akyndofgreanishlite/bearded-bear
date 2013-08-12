@@ -28,11 +28,11 @@
 		</header>
 		<section class="hero">
 			<!-- <img src="http://placehold.it/1140x720" /> -->
-			<div class="block center hundred">
-				<h1>Localytics</h1>
+			<hgroup class="block center hundred">
+				<h1><b>Localytics</b></h1>
 				<p><i>App Analytics &amp; Messaging</i></p>
 				<!-- Textbooks for all platforms. -->
-			</div>
+			</hgroup>
 			<!-- <nav class="nav-global block">
 				<ul>
 					<li><a href="#">Next Project</a></li>
@@ -41,19 +41,9 @@
 			</nav> -->
 		</section>
 		<section class="opening">
-			<p class="lead">When Localytics was founded in 2008, significant technical understanding and patience was required to use app analytics effectively. Today, everyone from project managers to marketers use them to track user behavior in real time, cutting across devices and apps to form a complete picture of their app ecosystem.</p>
+			<p class="lead">When Localytics was founded in 2008, significant technical understanding and patience was required to use analytics effectively. Today, everyone from project managers to marketers use them to track user behavior in real time, cutting across devices and apps to form a  complete picture of user behavior.</p>
 		</section>
 		<section>
-			<figure class="">
-				<img src="assets/img/localytics-tablet-labtop.jpg" alt="Mobile Analytics on Mobile" />
-				
-				<figcaption>
-					<!-- Multi-app selection -->
-					<!-- <h3>{Image title}</h3> -->
-					<!-- <p></p> -->
-				</figcaption>
-			</figure>
-			<p>Localytics came to us to simplify a growing list of features into an app that intuitive and tunable, while improving upon its powerful data analysis capabilities and tightly integrating marketing.</p>
 			<!-- <h2 class="">Setting Goals</h2>
 			<p class="">I collaborated with Localytics to establish objectives for their redesigned mobile analytics web app:</p>
 			<ol>
@@ -69,9 +59,9 @@
 
 			<figure class="">
 				<!-- <img src="assets/img/localytics-allapp-dashboard.jpg" alt="Multi-App Comparison" /> -->
-				<img src="assets/img/localytics-all-app-dashboard.jpg" alt="All App Dashboard" />
+				<img src="assets/img/localytics-all-app-dashboard.png" alt="All App Dashboard" />
 				<!-- <img src="assets/img/Localytics-app-multi-selection.jpg" alt="Multi-App Comparison" /> -->
-				
+				<!-- <img src="assets/img/localytics-chart-presets.jpg" alt="Chart Presets" /> -->
 				<figcaption>
 					Multi-app selection
 					<!-- <h3>{Image title}</h3> -->
@@ -84,10 +74,9 @@
 			<p>Cross-app comparison is probably the most complex aspect/feature of the redesign, enabled through app groups and multi-app selection.</p>
 
 			<figure class="block hundred">
-				<!-- <img class="block fifty" src="assets/img/localytics-app-dashboard.jpg" alt="App Dashboard" /> -->
-				<!-- <img class="block fifty" src="assets/img/localytics-analyze-usage.jpg" alt="Usage" /> -->
-				<img class="block hundred" src="assets/img/localytics-analyze-events-split.jpg" alt="Events Split" />
-				<!-- <img src="assets/img/localytics-chart-presets.jpg" alt="Chart Presets" /> -->
+				<img class="block fifty" src="assets/img/localytics-app-dashboard.jpg" alt="App Dashboard" />
+				<img class="block fifty" src="assets/img/localytics-analyze-usage.jpg" alt="Usage" />
+				<img class="block hundred" src="assets/img/localytics-analyze-events-split.png" alt="Events Split"
 				<figcaption class="block hundred">
 					Data visualization as narrative
 					<!-- <h3>{Image title}</h3> -->
@@ -97,7 +86,7 @@
 			<h3>Charts as Content</h3>
 			<p>One of the major breakthroughs was when I realized that the app needed to treat data like narrative content, with high-level metrics and trend previews to surface insights, enabling users to quickly find charts for in-depth examination.</p>
 			<p>Changes to the chart axis labels I felt could drastically change the experience in the app, and time-based (columns/charts) seemed like the natural place to start. By dictating the label density to always clearly show the selected date range with the minimum number of labels necessary, I helped the user focus on the visualizations.</p>
-			<p>We also implemented the chart axis controls/selection as a sentence, so users would always be able to understand and easily change the data sources and splits for a given chart. These chart formula sentences are able to be saved as presets, allowing users to iterate on charts in a comprehensive way. All chart states are perpetuated, allowing users to quickly revisit them in the future.</p>
+			<p>We also implemented the chart axis controls/selection as a sentence, so users would always be able to understand and easily change the data sources and splits for a given chart. These chart formula sentences are able to be saved, allowing users to iterate on charts in a comprehensive way. All chart states are perpetuated, allowing users to quickly revisit them in the future.</p>
 			
 
 			<figure class="">
@@ -157,30 +146,24 @@
 			
 		</section>
 		<aside>
-			<dl>
-				<dt>Studio</dt>
-				<dd><a href="http://www.bricksf.com">Brick Design</a>, in collaboration with Localytics</dd>
-				<dt>Role</dt>
-				<dd>Visual Design, Interaction Design, Prototyping</dd>
-			</dl>
 			<h4>Other related projects in</h4>
 			<ul class="tags center">
 				<li><a href="#">Product Design</a></li>	
 				<li><a href="#">User Experience</a></li>
 				<li><a href="#">Responsive Design</a></li>
 			</ul>
+			<dl>
+				<dt>Studio</dt>
+				<dd>Brick Design, in collaboration with Localytics</dd>
+				<dt>Role</dt>
+				<dd>Visual Design, Front-end Development</dd>
+			</dl>
 		</aside>
 		<footer>
 			<nav>
 				<ul>
 					<li><small>Next Project</small></li>
-					<li>
-						<a href="/kabam-corporate.html">
-							<h5>Kabam</h5>
-							<p><i>Repositioning a Mobile Gaming Giant</i></p>
-						</a>
-					</li>
-
+					<li><h5><a href="/kabam-corporate.html">Kabam</a></h5></li>
 				</ul>
 			</nav>
 		</footer>
