@@ -6,43 +6,49 @@
 	h3,
 	h4 {
 		margin: 0 auto .1em;
-		font-weight: 300;
+		// font-weight: 300;
+		font-weight: 600;
 		text-align: center;
 	}
 
 	h1 {
-		font-size: .75em;
-		font-weight: 700;
-		letter-spacing: .15rem;
-		text-transform: uppercase;
+		font-size: 4em;
+		line-height: 1.2em;
+		font-weight: 600;
+		color: white;
+		margin-top: 0.25em;
 
-		& + .project-list-featured {
-			margin-top: .25em;
-		}
-
-		& + .project-list-archives {
-			margin-top: .75em;
+		& + p {
+			color: $localytics-4;
+			font-size: 1.25em;
+			font-style: italic;
+			text-transform: none;
+			letter-spacing: 0;
+			word-spacing: 0;
 		}
 	}
 
 	h2 {
-		font-size: 4em;
-		line-height: 1.2em;
-		font-weight: 600;
+		font-size: 2.5em;
+		line-height: 1.1em;
 	}
 
 	h3 {
-		font-size: 2.5em;
+		// font-weight: 600;
+		line-height: 1.1em;
 	}
 
 	h4 {
-		font-size: 1.333em;
-		font-weight: 600;
+		font-size: .75em;
+		letter-spacing: .15rem;
+		word-spacing: 0.1em;
+		text-transform: uppercase;
 	}
 
 	p {
 		font-size: .75em;
-		letter-spacing: .1rem;
+		letter-spacing: .15rem;
+		word-spacing: 0.1em;
 		text-transform: uppercase;
 		text-align: center;
 	}
@@ -58,6 +64,7 @@
 
 		ul {
 			// @include grid-columns(1, 1, auto);
+			width: 100%;
 			text-align: center;
 			overflow: auto;
 			margin-top: 0;
@@ -69,9 +76,19 @@
 			float: left;
 		}
 	}
+	
+	header {
+		margin-bottom: 1em;
+	}
 
 	.hero {
 		background-color: $localytics-5;
+		background-image: url(../img/localytics-hero.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		overflow: auto;
+		margin-top: .7em;
 		margin-bottom: 3em;
 	}
 
@@ -128,6 +145,11 @@
 		margin-right: auto;
 	}
 
+	footer h5 {
+		font-size: 2.25em;
+		font-weight: 600;
+	}
+
 	h2,
 	h3,
 	// h4,
@@ -173,6 +195,10 @@
 		p {
 			margin-top: 0;
 		}
+	}
+
+	dd ul {
+		margin-top: 0;
 	}
 
 	.hero {
@@ -255,7 +281,7 @@
 	}
 
 	.tags {
-		margin-top: .2em;
+		// margin-top: 0;
 		margin-bottom: 2em;
 		text-align: center;
 
@@ -306,6 +332,10 @@
 		dd {
 			margin-left: 0;
 			margin-bottom: 1em;
+		}
+
+		ul li {
+			text-align: center;
 		}
 	}
 
@@ -478,6 +508,70 @@
 	}
 }
 
+.tjeg {
+	border-top-color: $tjeg-3;
+
+	h2,
+	h3 {
+		color: $tjeg-3;
+	}
+
+	a {
+		color: $tjeg-3;
+
+		&:hover {
+			color: $tjeg-3;
+			border-bottom-color: $tjeg-3;
+		}
+	}
+
+	figure:nth-child(n+2) img {
+		border: 1px solid #f1f1f1;
+	}
+
+	figcaption {
+		// color: $localytics-2;
+		color: #b1B1B1;
+	}
+
+	.tags {
+		a,
+		button {
+			color: $tjeg-3;
+			border-color: $tjeg-3;
+
+			&:hover {
+				color: $white;
+				background-color: $tjeg-3;
+				// border-color: darken($localytics-5, 25%);
+			}
+		}
+	}
+	
+	.hero {
+		background-image: url(../img/tjeg-hero.jpg);
+		background-color: $tjeg-3;
+
+		p {
+			color: $tjeg-1;
+		}
+	}
+
+	.opening {
+		background-color: $tjeg-3;
+	}
+
+	footer {
+		background-image: url(../img/mood-hero.jpg);
+		background-position: center 20%;
+		background-color: $mood-2;
+
+		h5 {
+			color: $white;
+		}
+	}
+}
+
 .mood {
 	h2,
 	h3 {
@@ -548,6 +642,7 @@
 	
 	.hero {
 		background-image: url(../img/inkling-hero.jpg);
+		background-position-y: top;
 		background-color: $inkling-3;
 
 		p {
@@ -601,7 +696,7 @@
 		background-color: $evolvingliterature-2;
 
 		p {
-			color: $evolvingliterature-1;
+			color: $evolvingliterature-2;
 		}
 	}
 
@@ -648,8 +743,8 @@
 			&:hover {
 				// background-color: darken($cincinnati-zoo2, 50%);
 				color: $white;
-				background-color: darken($cincinnati-zoo-2, 25%);
-				border-color: darken($cincinnati-zoo-2, 25%);
+				background-color: $cincinnati-zoo-2;
+				// border-color: darken($cincinnati-zoo-2);
 			}
 		}
 	}
@@ -660,6 +755,10 @@
 		p {
 			color: $cincinnati-zoo-1;
 		}
+	}
+
+	.opening {
+		background-color: $cincinnati-zoo-2;
 	}
 }
 
@@ -691,8 +790,8 @@
 			&:hover {
 				// background-color: darken($hablamosjuntos2, 30%);
 				color: $white;
-				background-color: darken($hablamos-juntos-2, 25%);
-				border-color: darken($hablamos-juntos-2, 25%);
+				background-color: $hablamos-juntos-2;
+				// border-color: darken($hablamos-juntos-2, 25%);
 			}
 		}
 	}
@@ -704,12 +803,17 @@
 			color: $hablamos-juntos-2;
 		}
 	}
-}
+
+	.opening {
+		background-color: $hablamos-juntos-2;
+	}
+}	
 
 .rwanda {
+	border-top-color: $rwanda-2;
+
 	h2,
-	h3,
-	h4 {
+	h3 {
 		color: $rwanda-1;
 	}
 
@@ -722,6 +826,15 @@
 		}
 	}
 
+	figure:nth-child(n+2) img {
+		border: 1px solid #f1f1f1;
+	}
+
+	figcaption {
+		// color: $localytics-2;
+		color: #b1B1B1;
+	}
+
 	.tags {
 		a,
 		button {
@@ -732,17 +845,22 @@
 			&:hover {
 				// background-color: darken($hablamosjuntos2, 30%);
 				color: $white;
-				background-color: darken($rwanda-2, 25%);
-				border-color: darken($rwanda-2, 25%);
+				background-color: $rwanda-2;
+				// border-color: darken($rwanda-2, 25%);
 			}
 		}
 	}
 	
 	.hero {
+		background-image: url(../img/rwanda-hero.jpg);
 		background-color: $rwanda-1;
 
 		p {
 			color: $rwanda-2;
 		}
+	}
+
+	.opening {
+		background-color: $rwanda-2;
 	}
 }

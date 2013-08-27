@@ -24,15 +24,17 @@ $height-lg: 50.000em; // 800px
 //  Colors
 $spice: #405B86;
 $red: #c92425;
-$cream: #f1e3c6;
+$cream: #fff0e0; // #f1e3c6;
 $black: #000;
 $white: #fff;
 $bluepurple: #3FA9F5;
 $maroon: #590A00;
 $rusty: #C82818;
+$yellow: #FFC52F; // #F3BB2B;
+$blue: #05669d;
 
 $text-color: #333333;
-$link-color: $rusty;
+$link-color: $blue; //$rusty;
 $link-color-hover: darken($link-color, 25%);
 $link-sub-color: #666;
 $link-sub-color-hover: darken($link-sub-color, 40%);
@@ -51,18 +53,16 @@ $background-color: #f5f5f2;
 
 // Project Specific Colors
 
-$inkling-1: #1C78B5;
-$inkling-2: #57BAF3;
-$inkling-3: #00B492;
-
-$evolvingliterature-1: #333333;
-$evolvingliterature-2: #ed5846;
-
 $localytics-1: #333333; // Dark Gray
 $localytics-2: #4d4a49; // Dark Graybrown #4d4a4a
 $localytics-3: #f2f0ea; // Cream
 $localytics-4: #4482c0; // Blue
 $localytics-5: #f15a29; // Orange #e6543a
+
+$tjeg-1: #ED2D2E; // Red
+$tjeg-2: #FBE98B; // Yellow
+$tjeg-3: #798080; // Gray
+$tjeg-4: #2A2A2A; // Dark Gray
 
 $kabam-1: #423630;
 $kabam-2: #FFBD36;
@@ -70,6 +70,20 @@ $kabam-2: #FFBD36;
 $mood-1: #3E3934; // #2F3034
 $mood-2: #E01E30;
 $mood-3: #98D152; // #41ACED
+
+$inkling-1: #1C78B5;
+$inkling-2: #57BAF3;
+$inkling-3: #00B492;
+
+$evolvingliterature-1: #333333;
+$evolvingliterature-2: #ed5846;
+$evolvingliterature-3: #ffda26;
+
+
+
+
+
+
 
 $hablamos-juntos-1: #010101;
 $hablamos-juntos-2: #424242;

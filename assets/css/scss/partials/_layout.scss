@@ -76,6 +76,8 @@ header {
 	font-family: $sans;
 	font-weight: 600;
 	margin-top: 1em;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
 
 	& + p {
 		text-indent: 0;
@@ -103,15 +105,15 @@ header {
 
 body.home {
 	text-align: center;
-	background-color: #575852;
-	border-top-color: $text-color;
+	background-color: $cream; // #575852;
+	border-top-color: #ffe2c3; // $text-color;
 
 	a {
-		color: #fefefc;
+		color: $blue; // $yellow; // #fefefc;
 
 		&:hover {
-			color: #fefefc;
-			border-bottom-color: #fefefc;
+			color: $blue; // $yellow; // #fefefc;
+			border-bottom-color: $blue; // $yellow; // #fefefc;
 
 		}
 	}
@@ -121,8 +123,9 @@ body.home {
 	}
 
 	.lead {
-		color: #fefefc;
+		color: $blue; // $yellow; // #fefefc;
 		width: 100%;
+
 	}
 }
 
@@ -172,6 +175,10 @@ body.home {
 	h2,
 	h3 {
 		margin-bottom: .5em;
+	}
+
+	footer ul {
+		width: 80%;
 	}
 
 	// Project?
@@ -276,7 +283,7 @@ body.home {
 		}
 
 		.opening.lead {
-			font-size: 1em;
+			// font-size: 1em;
 		}
 	}
 
@@ -295,10 +302,14 @@ body.home {
 	section,
 	aside {
 		width: 92% !important;
+
+		&.hero {
+			width: 100% !important;
+		}
 	}
 
 	.project-list h2 {
-		font-size: 3.25em !important; // Move media queries into the individual page partials to fix this.
+		// font-size: 3.25em !important; // Move media queries into the individual page partials to fix this.
 	}
 
 	.project-detail {
@@ -312,6 +323,7 @@ body.home {
 
 			.lead {
 				width: 92% !important;
+				font-size: 1.25em !important;
 			}
 		}
 	}
@@ -336,6 +348,8 @@ body.home {
 	h5,
 	h6 {
 		width: 60%;
+		-webkit-font-smoothing: antialiased;
+		font-smoothing: antialiased;
 	}
 
 	.project-detail {
@@ -346,6 +360,7 @@ body.home {
 
 		.lead {
 			width: 80%;
+			max-width: 26em;
 		}
 
 		section.opening {
@@ -416,20 +431,20 @@ body.home {
 // Height Short
 @media (min-height: $height-sm) {
 	.hero {
-		min-height: 16em;
+		min-height: 18em;
 	}
 }
 
 // Height Medium
 @media (min-height: $height-med) {
 	.hero {
-		min-height: 20em;
+		min-height: 24em;
 	}
 }
 
 // Height Tall
 @media (min-height: $height-lg) {
 	.hero {
-		min-height: 24em;
+		min-height: 28em;
 	}
 }
