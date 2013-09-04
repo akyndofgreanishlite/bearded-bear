@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="ROBOTS" content="INDEX,FOLLOW">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<title>Localytics Web App — Jameson Tyler</title>
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script type="text/javascript" src="//use.typekit.net/ikn8mif.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body class="project-detail localytics">
+	<main class="block grid">
+		<header class="block center">
+			<nav class="block hundred">
+				<ul>
+					<li><a href="/" class="name"><b>Jameson Tyler</b></a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">About</a></li>
+						<!-- <li><a href="#">Blog</a></li> -->
+						<!-- <li><a href="#">Contact</a></li> -->
+						<!-- <li><a href="cv.html">CV</a></li> -->
+				</ul>
+			</nav>
+		</header>
+		<section class="hero">
+			<!-- <img src="http://placehold.it/1140x720" /> -->
+			<hgroup class="block center hundred">
+				<h1><b>Localytics</b></h1>
+				<p><i>App Analytics &amp; Messaging</i></p>
+				<!-- Textbooks for all platforms. -->
+			</hgroup>
+			<!-- <nav class="nav-global block">
+				<ul>
+					<li><a href="#">Next Project</a></li>
+					<li><a href="#">Previous</a></li>
+				</ul>
+			</nav> -->
+		</section>
+		<section class="opening">
+			<p class="lead">When Localytics was founded in 2008, significant technical understanding and patience was required to use analytics effectively. Today, everyone from project managers to marketers use them to track user behavior in real time, cutting across devices and apps to form a  complete picture of user behavior.</p>
+		</section>
+		<section>
+			<!-- <h2 class="">Setting Goals</h2>
+			<p class="">I collaborated with Localytics to establish objectives for their redesigned mobile analytics web app:</p>
+			<ol>
+				<li>Simplify navigation and content architecture while adding multi-app comparison.</li>
+				<li>Streamline the charting experience and enable users to preview charts before examining them in depth.</li>
+				<li>Make the app intuitive and tunable by the user, ranging from product managers to marketers, while improving upon its powerful data analysis capabilities.</li>
+				<li>Create a summary executive report for sharing the health of an app or group of apps, independently of the core app.</li>
+				<li>Make the app available on the same devices that it gathers data from, creating a responsive app initially optimized for tablets, with full mobile support to come in the future.</li>
+				<li>Refresh Localytics’ brand language, representing the company as cutting-edge, welcoming, and professional.</li>
+			</ol> -->
+
+			<h2>Diving into the Details</h2>
+
+			<figure class="">
+				<!-- <img src="assets/img/localytics-allapp-dashboard.jpg" alt="Multi-App Comparison" /> -->
+				<img src="assets/img/localytics-all-app-dashboard.png" alt="All App Dashboard" />
+				<!-- <img src="assets/img/Localytics-app-multi-selection.jpg" alt="Multi-App Comparison" /> -->
+				<!-- <img src="assets/img/localytics-chart-presets.jpg" alt="Chart Presets" /> -->
+				<figcaption>
+					Multi-app selection
+					<!-- <h3>{Image title}</h3> -->
+					<!-- <p></p> -->
+				</figcaption>
+			</figure>
+			<h3>Simple, Yet Powerful</h3>
+			<p>Designing for mobile first, I simplified the navigation structure/scheme, folding many of the tertiary nav items of the current app into chart presets, using icons to represent the primary tasks of app management, growth, and development, erasing the previous division within the app of analytics and marketing.</p>
+			<p>Reducing the vast amount of visible controls on a chart, I grouped them by actions, placing less used features like selecting chart visualization types in corresponding popover menus.</p>
+			<p>Cross-app comparison is probably the most complex aspect/feature of the redesign, enabled through app groups and multi-app selection.</p>
+
+			<figure class="block hundred">
+				<img class="block fifty" src="assets/img/localytics-app-dashboard.jpg" alt="App Dashboard" />
+				<img class="block fifty" src="assets/img/localytics-analyze-usage.jpg" alt="Usage" />
+				<img class="block hundred" src="assets/img/localytics-analyze-events-split.png" alt="Events Split"
+				<figcaption class="block hundred">
+					Data visualization as narrative
+					<!-- <h3>{Image title}</h3> -->
+					<!-- <p></p> -->
+				</figcaption>
+			</figure>
+			<h3>Charts as Content</h3>
+			<p>One of the major breakthroughs was when I realized that the app needed to treat data like narrative content, with high-level metrics and trend previews to surface insights, enabling users to quickly find charts for in-depth examination.</p>
+			<p>Changes to the chart axis labels I felt could drastically change the experience in the app, and time-based (columns/charts) seemed like the natural place to start. By dictating the label density to always clearly show the selected date range with the minimum number of labels necessary, I helped the user focus on the visualizations.</p>
+			<p>We also implemented the chart axis controls/selection as a sentence, so users would always be able to understand and easily change the data sources and splits for a given chart. These chart formula sentences are able to be saved, allowing users to iterate on charts in a comprehensive way. All chart states are perpetuated, allowing users to quickly revisit them in the future.</p>
+			
+
+			<figure class="">
+				<!-- <img src="assets/img/Localytics-CustomDashboard.jpg" alt="Customizable Dashboards" /> -->
+				<img src="assets/img/Localytics-chart-presets.jpg" alt="Chart presets" />
+				<!-- <img src="assets/img/Localytics-Reports-1.jpg" alt="Reports" /> -->
+				<!-- <img src="assets/img/Localytics-Reports-2.jpg" alt="Reports" /> -->
+				<figcaption>
+					Chart presets, custom dashboards, and reports
+					<!-- <h3>{Image title}</h3> -->
+					<!-- <p></p> -->
+				</figcaption>
+			</figure>
+			<h3>User Tunable</h3>
+			<p>Accomplished through customizable dashboards, user-definable chart presets and reports.</p>
+			<p>We also implemented the chart axis controls/selection as a sentence, so users would always be able to understand and easily change the data sources and splits for a given chart. These chart formula sentences are able to be saved, allowing users to iterate on charts in a comprehsive way. All chart states are perpetuated, allowing users to quickly revisit them in the future.</p>
+
+			<figure class="">
+				<img src="http://placehold.it/1140x560" alt="#" />
+<!-- 				<img src="assets/img/Localytics-Reports-Executive-1.jpg" alt="Executive Reports" />
+				<img src="assets/img/Localytics-Reports-Executive-2.jpg" alt="Executive Reports" />
+ -->				<figcaption>
+					Executive reports
+					<!-- <h3>{Image title}</h3> -->
+					<!-- <p></p> -->
+				</figcaption>
+			</figure>
+			<h3>Condensing it All</h3> 
+			<p>Ultimately these analyses needed to be summarized for viewing outside the core Localytics app, so an executive report was added, allowing users to package the health of a single app or group of apps for sharing to team members, executives, and investors. Commenting directly on the metrics and charts helps drive communication and understanding.</p>
+			<!-- <p>This report updates with a chosen frequency, and allows Localytics results to be shared without requiring additional licenses/accounts or knowledge of the app. Commenting is visible in the shared report and in the original publisher’s dashboard for further discussion directly on the content.</p> -->
+
+<!-- 			<figure class="">
+				<img src="http://placehold.it/1140x560" alt="#" />
+				<figcaption>
+					Tablet / Desktop
+				</figcaption>
+			</figure>
+			<h3>Analytics from Anywhere</h3> 
+			<p>We used the opportunity to implement font icons, with Symbolset Standard as the primary set, and custom icons produced with Glyphs for the main navigation.</p>
+ -->			
+			<!-- <figure class="">
+				<img src="http://placehold.it/1140x560" alt="#" /> -->
+				<!-- <img src="assets/img/Localytics-UI-Guidelines-1.jpg" alt="UI Guidelines" />
+				<img src="assets/img/Localytics-UI-Guidelines-2.jpg" alt="UI Guidelines" /> -->
+				<!-- <figcaption>
+					UI Guidelines -->
+					<!-- <h3>{Image title}</h3> -->
+					<!-- <p></p> -->
+				<!-- </figcaption>
+			</figure>
+			<h3 class="">Updating the Localytics brand language to match the powerful new app architecture</h3>
+			<p class="">Brainstorming with their engineering staff, presented with concepts to begin with, and then create (visual mockups) (within the visual language of the app).</p> -->
+
+			<!-- <h2>In Conclusion</h2>
+			<p>Reiterate the problems/solutions, and where Localytics is headed in the future. Something about behavioral segments and predictive/suggest-engine.</p>
+			<p>As the product continues to evolve, the need to simplify the experience (and focus it once again), in ways that we’ve already planned, and those that haven't been yet. Full mobile support is in the works, as well as other more robust ways of comparing data sets (and specialized chart types).</p> -->
+			
+		</section>
+		<aside>
+			<h4>Other related projects in</h4>
+			<ul class="tags center">
+				<li><a href="#">Product Design</a></li>	
+				<li><a href="#">User Experience</a></li>
+				<li><a href="#">Responsive Design</a></li>
+			</ul>
+			<dl>
+				<dt>Studio</dt>
+				<dd>Brick Design, in collaboration with Localytics</dd>
+				<dt>Role</dt>
+				<dd>Visual Design, Front-end Development</dd>
+			</dl>
+		</aside>
+		<footer>
+			<nav>
+				<ul>
+					<li><small>Next Project</small></li>
+					<li><h5><a href="/kabam-corporate.html">Kabam</a></h5></li>
+				</ul>
+			</nav>
+		</footer>
+	</main>
+</body>
+</html>
