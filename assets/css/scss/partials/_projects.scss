@@ -1,5 +1,7 @@
 .project-list {
 	@include grid-columns(1, 1, auto);
+	background-color: $cream; // #575852;
+	border-top-color: $blue; // $text-color;
 
 	h1,
 	h2,
@@ -9,6 +11,7 @@
 		// font-weight: 300;
 		font-weight: 600;
 		text-align: center;
+		color: $blue;
 	}
 
 	h1 {
@@ -51,6 +54,17 @@
 		word-spacing: 0.1em;
 		text-transform: uppercase;
 		text-align: center;
+		color: $text-color;
+	}
+
+	a {
+		color: $blue; // $yellow; // #fefefc;
+
+		&:hover {
+			color: $blue; // $yellow; // #fefefc;
+			border-bottom-color: $blue; // $yellow; // #fefefc;
+
+		}
 	}
 
 	section {
@@ -161,6 +175,12 @@
 		margin-bottom: .6em;
 	}
 
+	.button {
+		display: inline-block;
+		clear: both;
+		text-align: center;
+	}
+
 	a:hover {
 		border-bottom-width: 2px;
 		border-bottom-style: solid;
@@ -177,15 +197,26 @@
 
 	p + figure {
 		margin-top: 6em;
+
+		&.blockquote {
+			margin-top: 2em;
+			margin-bottom: 2em;
+		}
 	}
 
-	figure + h2 {
-		margin-top: 0.5em;
-	}
+	figure {
+		& + h2 {
+			margin-top: 0.5em;
+		}
 
-	figure + h3 {
-		margin-top: 1.25em;
-	}
+		& + h3 {
+			margin-top: 1.25em;
+		}
+
+		& + figure {
+			margin-top: 1.25em;
+		}
+	} 
 
 	figcaption {
 		font-family: $sans;
@@ -307,8 +338,6 @@
 				padding: .25em .75em .35em;	
 				// color: $white;
 				text-shadow: none;
-
-				//FIX: White space wrapping.
 				white-space: nowrap;
 	
 				&:hover {
@@ -361,7 +390,7 @@
 					border-bottom: none;
 	
 					h5 {
-						border-bottom: 2px solid $white;
+						// border-bottom: 2px solid $white;
 					}
 				}
 			}
@@ -390,6 +419,69 @@
 }
 
 // Write a for loop to do this with provided variables? Is there a way to introduce exceptions?
+
+.pidan {
+	border-top-color: $pidan-1;
+
+	h2,
+	h3 {
+		color: $pidan-1;
+	}
+
+	a {
+		color: $pidan-1;
+
+		&:hover {
+			color: $pidan-1;
+			border-bottom-color: $pidan-1;
+		}
+	}
+
+	figure:nth-child(n+2) img {
+		// border: 1px solid #f1f1f1;
+	}
+
+	figcaption {
+		// color: $localytics-2;
+		color: #b1B1B1;
+	}
+
+	.tags {
+		a,
+		button {
+			color: $pidan-1;
+			border-color: $pidan-1;
+
+			&:hover {
+				color: $white;
+				background-color: $pidan-1;
+			}
+		}
+	}
+	
+	.hero {
+		background-image: url(../img/pidan-hero.jpg);
+		background-color: $pidan-1;
+
+		p {
+			color: $pidan-2;
+		}
+	}
+
+	.opening {
+		background-color: $pidan-1;
+	}
+
+	footer {
+		background-image: url(../img/kabam-hero.jpg);
+		background-position: center 20%;
+		background-color: $kabam-2;
+
+		h5 {
+			color: $white;
+		}
+	}
+}
 
 .localytics {
 	border-top-color: $localytics-5;
@@ -477,20 +569,32 @@
 		color: $kabam-2;
 	}
 
-	.tags {
-		a,
-		button {
-			// background-color: $kabam2;
-			color: $kabam-2;
-			border-color: $kabam-2;
+	section:last-child,
+	section:last-of-type {
+		text-align: center;
 
-			&:hover {
-				// background-color: darken($kabam2, 50%);
-				color: $white;
-				background-color: $kabam-2;
-				// border-color: darken($kabam-2, 25%);
-			}
+		figcaption {
+			text-align: left;
 		}
+	}
+
+	.tags a,
+	.tags button {
+		// background-color: $kabam2;
+		color: $kabam-2;
+		border-color: $kabam-2;
+
+		&:hover {
+			// background-color: darken($kabam2, 50%);
+			color: $white;
+			background-color: $kabam-2;
+			// border-color: darken($kabam-2, 25%);
+		}
+	}
+
+	.button {
+		// @extend .tags;
+		margin-bottom: 2em;
 	}
 	
 	.hero {
@@ -508,69 +612,69 @@
 	}
 }
 
-.tjeg {
-	border-top-color: $tjeg-3;
+// .tjeg {
+// 	border-top-color: $tjeg-3;
 
-	h2,
-	h3 {
-		color: $tjeg-3;
-	}
+// 	h2,
+// 	h3 {
+// 		color: $tjeg-3;
+// 	}
 
-	a {
-		color: $tjeg-3;
+// 	a {
+// 		color: $tjeg-3;
 
-		&:hover {
-			color: $tjeg-3;
-			border-bottom-color: $tjeg-3;
-		}
-	}
+// 		&:hover {
+// 			color: $tjeg-3;
+// 			border-bottom-color: $tjeg-3;
+// 		}
+// 	}
 
-	figure:nth-child(n+2) img {
-		border: 1px solid #f1f1f1;
-	}
+// 	figure:nth-child(n+2) img {
+// 		border: 1px solid #f1f1f1;
+// 	}
 
-	figcaption {
-		// color: $localytics-2;
-		color: #b1B1B1;
-	}
+// 	figcaption {
+// 		// color: $localytics-2;
+// 		color: #b1B1B1;
+// 	}
 
-	.tags {
-		a,
-		button {
-			color: $tjeg-3;
-			border-color: $tjeg-3;
+// 	.tags {
+// 		a,
+// 		button {
+// 			color: $tjeg-3;
+// 			border-color: $tjeg-3;
 
-			&:hover {
-				color: $white;
-				background-color: $tjeg-3;
-				// border-color: darken($localytics-5, 25%);
-			}
-		}
-	}
+// 			&:hover {
+// 				color: $white;
+// 				background-color: $tjeg-3;
+// 				// border-color: darken($localytics-5, 25%);
+// 			}
+// 		}
+// 	}
 	
-	.hero {
-		background-image: url(../img/tjeg-hero.jpg);
-		background-color: $tjeg-3;
+// 	.hero {
+// 		background-image: url(../img/tjeg-hero.jpg);
+// 		background-color: $tjeg-3;
 
-		p {
-			color: $tjeg-1;
-		}
-	}
+// 		p {
+// 			color: $tjeg-1;
+// 		}
+// 	}
 
-	.opening {
-		background-color: $tjeg-3;
-	}
+// 	.opening {
+// 		background-color: $tjeg-3;
+// 	}
 
-	footer {
-		background-image: url(../img/mood-hero.jpg);
-		background-position: center 20%;
-		background-color: $mood-2;
+// 	footer {
+// 		background-image: url(../img/mood-hero.jpg);
+// 		background-position: center 20%;
+// 		background-color: $mood-2;
 
-		h5 {
-			color: $white;
-		}
-	}
-}
+// 		h5 {
+// 			color: $white;
+// 		}
+// 	}
+// }
 
 .mood {
 	h2,
@@ -628,14 +732,12 @@
 	.tags {
 		a,
 		button {
-			// background-color: $inkling2;
-			color: $inkling-2;
-			border-color: $inkling-2;
+			color: $inkling-1;
+			border-color: $inkling-1;
 
 			&:hover {
 				color: $white;
-				background-color: $inkling-2;
-				// border-color: darken($inkling-2, 25%);
+				background-color: $inkling-1;
 			}
 		}
 	}
@@ -643,7 +745,7 @@
 	.hero {
 		background-image: url(../img/inkling-hero.jpg);
 		background-position-y: top;
-		background-color: $inkling-3;
+		background-color: $inkling-1;
 
 		p {
 			color: $inkling-2;
@@ -652,6 +754,16 @@
 
 	.opening {
 		background-color: $inkling-1;
+	}
+
+	footer {
+		background-image: url(../img/frommers-hero.jpg);
+		background-position: center 20%;
+		background-color: $frommers-1;
+
+		h5 {
+			color: $white;
+		}
 	}
 }
 
@@ -702,6 +814,66 @@
 
 	.opening {
 		background-color: $evolvingliterature-2;
+	}
+
+	footer {
+		background-image: url(../img/cincinnati-zoo-hero.jpg);
+		background-position: center 20%;
+		background-color: $cincinnati-zoo-2;
+
+		h5 {
+			color: $white;
+		}
+	}
+}
+
+.frommers {
+	border-top-color: $frommers-1;
+
+	h2,
+	h3,
+	h4 {
+		color: $frommers-1;
+	}
+
+	a {
+		color: $frommers-1;
+
+		&:hover {
+			color: $frommers-1;
+			border-bottom-color: $frommers-1;
+		}
+	}
+
+	figcaption {
+		color: $frommers-1;
+	}
+
+	.tags {
+		a,
+		button {
+			color: $frommers-1;
+			border-color: $frommers-1;
+
+			&:hover {
+				color: $white;
+				background-color: $frommers-1;
+				// border-color: darken($localytics-5, 25%);
+			}
+		}
+	}
+	
+	.hero {
+		background-image: url(../img/frommers-hero.jpg);
+		background-color: $frommers-1;
+
+		p {
+			color: #e20048;
+		}
+	}
+
+	.opening {
+		background-color: $frommers-1;
 	}
 
 	footer {

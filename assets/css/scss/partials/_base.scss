@@ -193,6 +193,26 @@ nav {
 	}
 }
 
+blockquote {
+	margin-left: 0;
+	margin-right: 0;
+	text-indent: -.4em;
+
+	&:before,
+	&::before {
+		content: '“';
+	}
+
+	&:after,
+	&::after {
+		content: '”';
+	}
+
+	& + figcaption {
+		margin-top: -1em;
+	}
+}
+
 section {
 	// overflow: auto;
 }
