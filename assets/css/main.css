@@ -199,7 +199,7 @@ figure {
  * Define consistent border, margin, and padding.
  */
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: 1px solid silver;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -1760,7 +1760,7 @@ body.home {
   .project-detail h1,
   .project-detail h2,
   .project-detail h3 {
-    margin-bottom: .5em !important; }
+    margin-bottom: 0.5em !important; }
   .project-detail figure.full-bleed {
     margin-left: -7.5%;
     margin-right: -7.5%; } }
@@ -1965,11 +1965,11 @@ body.home {
         margin-top: 1.25em; }
       .project-detail .tags li a {
         font-family: "Freight Sans Pro", "freight-sans-pro", Verdana, sans-serif;
-        margin: .25em .35em;
+        margin: 0.25em 0.35em;
         border-radius: 4px;
         border-width: 2px;
         border-style: solid;
-        padding: .25em .75em .35em;
+        padding: 0.25em 0.75em 0.35em;
         text-shadow: none;
         white-space: nowrap; }
         .project-detail .tags li a:hover {
