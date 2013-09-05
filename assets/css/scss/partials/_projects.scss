@@ -159,9 +159,14 @@
 		margin-right: auto;
 	}
 
-	footer h5 {
-		font-size: 2.25em;
-		font-weight: 600;
+	footer {
+		background-size: cover;
+		background-repeat: no-repeat;
+
+		h5 {
+			font-size: 2.25em;
+			font-weight: 600;
+		}
 	}
 
 	h2,
@@ -610,6 +615,16 @@
 	.opening {
 		background-color: $kabam-1;
 	}
+
+	footer {
+		background-image: url(../img/inkling-hero.jpg);
+		background-position-y: top;
+		background-color: $inkling-1;
+
+		h5 a {
+			color: $white;
+		}
+	}
 }
 
 // .tjeg {
@@ -761,7 +776,7 @@
 		background-position: center 20%;
 		background-color: $frommers-1;
 
-		h5 {
+		h5 a {
 			color: $white;
 		}
 	}
@@ -821,7 +836,7 @@
 		background-position: center 20%;
 		background-color: $cincinnati-zoo-2;
 
-		h5 {
+		h5 a {
 			color: $white;
 		}
 	}
@@ -881,7 +896,7 @@
 		background-position: center 20%;
 		background-color: $cincinnati-zoo-2;
 
-		h5 {
+		h5 a {
 			color: $white;
 		}
 	}
