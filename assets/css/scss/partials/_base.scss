@@ -112,7 +112,15 @@ a {
 	-ms-transition: all 0.4s ease-out;
 	-o-transition: all 0.4s ease-out;
 	transition: all 0.4s ease-out;
-	
+
+	* {
+		-webkit-transition: all 0.4s ease-out;
+		-moz-transition: all 0.4s ease-out;
+		-ms-transition: all 0.4s ease-out;
+		-o-transition: all 0.4s ease-out;
+		transition: all 0.4s ease-out;
+	}
+
 	&:link,
 	&:active,
 	&:visited {
@@ -128,6 +136,14 @@ a {
 		-o-transition: all 0.1s ease-out;
 		transition: all 0.1s ease-out;
 		// text-decoration: underline;
+
+		* {
+			-webkit-transition: all 0.1s ease-out;
+			-moz-transition: all 0.1s ease-out;
+			-ms-transition: all 0.1s ease-out;
+			-o-transition: all 0.1s ease-out;
+			transition: all 0.1s ease-out;
+		}
 	}
 
 	img {
